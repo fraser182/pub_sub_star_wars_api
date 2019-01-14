@@ -1,0 +1,64 @@
+* {
+  font-family: Roboto;
+  /* list-style-type: none; */
+  text-align: center;
+  background-color: black;
+  color:white;
+
+}
+
+h1 {
+  /* font-family: 'Star Jedi', arial; */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #EEDB00 ;
+  color:black ;
+}
+
+#people-list{
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* border: 2px solid red; */
+}
+
+ul {
+  padding:0;
+  list-style-position: inside; /* to align the bullet point central with text */
+}
+
+li {
+  list-style: none;
+}
+
+#people-list > div {
+  border-style: solid;
+  border-color: #EEDB00;
+  border-radius: 20px;
+  margin: 10px;
+  /* text-align: center; */
+  justify-content: center;
+  padding: 5px;
+
+}
+
+#people-list > div:nth-child(odd) {
+  background-color: rgba(13, 3, 9, 0.31);
+}
+
+#people-list > div:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.star_wars_main_logo{
+  height: 300px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+#table-container{
+  width:100%;
+  height:400px;
+}
