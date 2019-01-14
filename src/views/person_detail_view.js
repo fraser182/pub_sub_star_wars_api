@@ -2,7 +2,7 @@ const PersonDetailView = function(){
 
 }
 
-PersonDetailView.prototype.createPersonDetail = function (person) {
+PersonDetailView.prototype.createPersonMoreInfoDetail = function (person) {
 
 
   const personDiv = document.createElement('div');
