@@ -1,8 +1,8 @@
-const PeopleDetailView = function(){
+const PersonDetailView = function(){
 
 }
 
-PeopleDetailView.prototype.createPersonDetail = function (person) {
+PersonDetailView.prototype.createPersonDetail = function (person) {
 
 
   const personDiv = document.createElement('div');
@@ -20,10 +20,13 @@ PeopleDetailView.prototype.createPersonDetail = function (person) {
   massItem.textContent = `Mass: ${person.mass} kg's`;
   detailList.appendChild(massItem);
 
-  const btn = document.createElement('button');
-  btn.textContent = 'More Info';
-  btn.id = 'more_info';
-  detailList.appendChild(btn);
+  const hairColorItem = document.createElement('li');
+  hairColorItem.textContent = `Hair Colour: ${person.hair_color}`
+
+  // const btn = document.createElement('button');
+  // btn.textContent = 'Exit';
+  // btn.id = 'exit';
+  // detailList.appendChild(btn);
 
   personDiv.appendChild(detailList);
 
@@ -31,5 +34,5 @@ PeopleDetailView.prototype.createPersonDetail = function (person) {
 };
 
 
-module.exports = PeopleDetailView;
+module.exports = PersonDetailView;
 ;

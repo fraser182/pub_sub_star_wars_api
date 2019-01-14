@@ -8,13 +8,12 @@ const BtnView = function(menu){
 // B then C
 BtnView.prototype.bindEvents = function () {
   PubSub.subscribe('People:people-loaded', (event) => {
-
     this.populate(event.detail);
   })
   this.menu.addEventListener('click', (event) => {
     // console.log('test here', event.target.value);
-    const selectedGender = event.target.value;
-    console.log('SelectView:gender-selected', selectedGender);
+    console.log('testing', event.target.id);
+    const selectedGender = event.target.id;
     PubSub.publish('SelectView:gender-selected', selectedGender); // sending a selected gender onyly
   });
 }
