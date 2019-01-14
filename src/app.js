@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
   selectView.bindEvents();
 
   // const container2 = document.querySelector('#people-list')
-  // const munroList = new PersonView(container);
-  // munroList.bindEvents();
+  // const personList = new PersonView(container);
+  // personList.bindEvents();
 
   const container = document.querySelector('#people-list')
   const peopleList = new PeopleListView(container);
