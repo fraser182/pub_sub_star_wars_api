@@ -10,7 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^4.2.1",
     "highcharts": "^7.0.1",
+    "promise": "^8.0.2",
     "webpack": "^4.28.1",
     "webpack-cli": "^3.2.1"
   }

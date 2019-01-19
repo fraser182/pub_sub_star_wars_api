@@ -20,10 +20,10 @@ PeopleDetailView.prototype.createPersonDetail = function (person) {
   massItem.textContent = `Mass: ${person.mass} kg's`;
   detailList.appendChild(massItem);
 
-  const btn = document.createElement('button');
-  btn.textContent = 'More Info';
-  btn.id = 'more_info';
-  detailList.appendChild(btn);
+  // const btn = document.createElement('button');
+  // btn.textContent = 'More Info';
+  // btn.id = 'more_info';
+  // detailList.appendChild(btn);
 
   personDiv.appendChild(detailList);
 

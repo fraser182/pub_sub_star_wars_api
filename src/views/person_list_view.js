@@ -23,9 +23,21 @@ PersonListView.prototype.bindEvents = function () {
 PersonListView.prototype.render = function (people) {
   people.forEach((person) => {
     const personDetail = new PeopleDetailView();
-    const personDiv = personDetail.createPersonMoreInfoDetail(person);
+    const personDiv = personDetail.createPersonDetail(person);
     this.container.appendChild(personDiv);
   });
 };
+
+// PersonListView.prototype.createDeleteButton = function (sightingId) {
+//   const button = document.createElement('button');
+//   button.classList.add('delete-btn');
+//   button.value = sightingId;
+//
+//   button.addEventListener('click', (evt) => {
+//     PubSub.publish('SightingView:sighting-delete-clicked', evt.target.value);
+//   });
+//
+//   return button;
+// };
 
 module.exports = PersonListView;

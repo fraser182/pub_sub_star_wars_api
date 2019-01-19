@@ -1,5 +1,5 @@
 const People = require('./models/people.js')
-const PeopleListView = require('./views/people_list_view.js');
+const PersonListView = require('./views/person_list_view.js');
 const SelectView = require('./views/select_view.js');
 // const PersonView = require('./views/person_view.js');
 
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // personList.bindEvents();
 
   const container = document.querySelector('#people-list')
-  const peopleList = new PeopleListView(container);
+  const peopleList = new PersonListView(container);
   peopleList.bindEvents();
 
 
