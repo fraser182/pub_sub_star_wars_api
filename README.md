@@ -45,7 +45,7 @@ To make the request you may use either `fetch` or the `XMLHttpRequest` object.
 
 ## Setup
 ```
-npm install <br>
+npm install 
 npm run build
 ```
 
